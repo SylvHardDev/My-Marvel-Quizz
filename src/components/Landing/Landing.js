@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   const [btn, setBtn] = useState(false);
@@ -33,10 +34,10 @@ const Landing = () => {
   const displayBtn = btn && (
     <>
       <div className="leftBox" onMouseOver={setLeftImg} onMouseOut={clearImg}>
-        <button className="btn-welcome">Inscription</button>
+        <Link to="/signup" className="btn-welcome">Inscription</Link>
       </div>
       <div className="rightBox" onMouseOver={setRightImg} onMouseOut={clearImg}>
-        <button className="btn-welcome">Connexion</button>
+        <Link to="/login" className="btn-welcome">Connexion</Link>
       </div>
     </>
   );
