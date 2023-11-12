@@ -11,7 +11,7 @@ const Landing = () => {
     setTimeout(() => {
       wolverineRef.current.classList.remove("startingImg");
       setBtn(true);
-    }, 1500);
+    }, 1000);
   }, []);
 
   const setLeftImg = () => {
